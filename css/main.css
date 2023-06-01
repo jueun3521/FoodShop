@@ -140,7 +140,6 @@ header{
 }
 .logo{
     width: 20%;
-    background-color: burlywood;
 }
 .logo a{
     font-weight: 800;
@@ -318,9 +317,10 @@ footer p{
     border-radius: 50%;
     font-size: 0;
     /* background-color: black; */
-    transition: background 0.3s;
+    /* transition: background 0.3s; */
     overflow: hidden;
 }
+
 .gob-mb-sns li a::before{
     position: absolute;
     top: 50%;
@@ -329,17 +329,29 @@ footer p{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    transition: backgroud-position 0.3s;
+    transition: background-position 0.3s;
+}
+.gob-mb-sns li a:hover{
+    background-color: black;
 }
 .i-fb::before{
-    background: url(../images/icon_sns.svg) no-repeat;
+    background: url("../images/icon_sns.svg") no-repeat;
     background-position:0 0;
 }
+.i-fb:hover::before{
+    background-position: -30px 0;
+}
 .i-is::before{
-    background: url(../images/icon_sns.svg) no-repeat;
+    background: url("../images/icon_sns.svg") no-repeat;
     background-position:0 -30px;
 }
+.i-is:hover::before{
+    background-position: -30px -30px;
+}
 .i-yt::before{
-    background: url(../images/icon_sns.svg) no-repeat;
+    background: url("../images/icon_sns.svg") no-repeat;
     background-position:0 -60px;
+}
+.i-yt:hover::before{
+    background-position: -30px -60px;
 }
